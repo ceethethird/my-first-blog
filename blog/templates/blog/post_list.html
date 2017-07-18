@@ -1,20 +1,101 @@
+<!DOCTYPE html>
 <html>
-    <head>
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-      <title>Django Girls blog</title>
-    </head>
-    <body>
-      <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
+<head>
+<title> The Portfolio </title>
+</head>
+<body style="background-color:pink;">
+<h4 style="text-align:right"> Contact Info </h4>
+<h5 style="text-align:right;font-family:courier;"> in the hands of a professional </h5>
+<h4 style="text-align:right;font-family:courier;"> *should we reverse the order* </h4>
+<h1 style="text-align:center;"> Sitra S </h1>
+<p style="text-align:center;" id="small"> How do you compress yourself<br>into a clever bio?</p>
+<div class="wrapper">
+<button type="button" onclick = "WillfulLabour()">Witty Bio</button>
 </div>
+<style>
+.wrapper{
+  text-align: center;
+}
+.button{
+  position : absolute;
+  top: 50%;
+}
+</style>
+<script> function WillfulLabour(){
+  document.getElementById("small").innerHTML = "Words";
+}
+</script>
+<pre style="font-size:125%;"> typing this      with no regard
+  to proper
+  formatting             but the <small>lowercase</small>
+                aesthetic   remains
+</pre>
+<a class="one" href="https://www.youtube.com/watch?v=MNGSv7Gm5B0/" target="_blank">dead orange</a>
+<img src="https://i.ytimg.com/vi/MNGSv7Gm5B0/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD-cARMkJyz0-rdRwCWPlDaT31QgA" style="width:100;height:80;"/>
+<style>
+img{
+  display: none
+}
+a.one:hover + img{
+  display: block;
+}
+</style>
+<h1 style="font-family:courier;border: 1px solid white;"> Main work</h1>
+<div>
+  <p style="float: left;"><a href="https://scratch.mit.edu/projects/167544767/" target="_blank">
+  <img src="https://cdn2.scratch.mit.edu/get_image/project/167544767_100x80.png"/>
+</a>
+<pre class="other" style="padding:15px;font-size:125%;"> This handsome young
+lad not only dances, but,
+if you're lucky, he just might
+morphe into a mystery fruit.
+</pre>
+</div>
+<pre>
 
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-    </body>
+
+
+</pre>
+<div><p style="float: right;"><a href="https://scratch.mit.edu/projects/167550823/" target="_blank">
+  <img src="https://cdn2.scratch.mit.edu/get_image/project/167550823_100x80.png" style="width:100;height:80;"/>
+</a>
+<pre style="padding:15px;font-size:125%;text-align:right"> Although the game
+often ends before it
+truely starts, the
+colours are sure to impress.
+</pre>
+</div>
+<pre>
+
+
+
+</pre>
+<div><p style="float: left;"><a href="https://scratch.mit.edu/projects/167429232/" target="_blank">
+  <img src="https://cdn2.scratch.mit.edu/get_image/project/167429232_100x80.png" style="width:100;height:80;"/>
+</a>
+<pre style="padding:15px;font-size:125%;"> Do you have a love
+for geometric shapes? If not,
+be prepared for your passion
+to ignited.
+</pre>
+</div>
+<aside id = "hidden"> <b> Side Work </b> </aside>
+<button id="show" type ="button" onclick="sidnancy()"> Show</button>
+<script>
+  var button = document.getElementById("show")
+  button.addEventListener("click", hideshow, false);
+
+  function hideshow() {
+    document.getElementById("sidnancy").style.display = "block";
+    this.style.display = "none"
+  }
+</script>
+<script>
+function sidnancy() {
+  document.getElementById("hidden").innerHTML = "*lol you can't see that*";
+}
+</script>
+<p id="sidnancy"></p>
+</body>
 </html>
+
